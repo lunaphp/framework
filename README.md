@@ -7,6 +7,8 @@
 <a href="https://packagist.org/packages/lunaphp/framework"><img src="https://poser.pugx.org/lunaphp/framework/license.svg" alt="License"></a>
 </p>
 
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/lunaphp/framework/pulls)
+
 ## About Luna Framework
 
 Welcome to the LunaPHP Framework,
