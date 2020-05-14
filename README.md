@@ -1,4 +1,4 @@
- <p align="center"><img src="https://avatars3.githubusercontent.com/u/59028537?s=400&u=c48f42d3b05f3f8c83c2ba916aa9277ebe90dc3d&v=4" width="400"></p>
+ <p align="center"><img src="https://avatars3.githubusercontent.com/u/59028537?s=400&u=c48f42d3b05f3f8c83c2ba916aa9277ebe90dc3d&v=4" width="150"></p>
 
 <p align="center">
 <a href="https://travis-ci.org/lunaphp/framework"><img src="https://travis-ci.org/lunaphp/framework.svg" alt="Build Status"></a>
