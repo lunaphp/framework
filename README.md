@@ -6,6 +6,10 @@
 <a href="https://packagist.org/packages/lunaphp/framework"><img src="https://poser.pugx.org/lunaphp/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/lunaphp/framework"><img src="https://poser.pugx.org/lunaphp/framework/license.svg" alt="License"></a>
 </p>
+[![License](https://poser.pugx.org/lunaphp/framework/license)](https://packagist.org/packages/lunaphp/framework)
+
+
+
 
 ## About Luna Framework
 
