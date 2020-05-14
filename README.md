@@ -8,7 +8,7 @@
 </p>
 [![GitHub License](https://poser.pugx.org/lunaphp/framework/license)](https://packagist.org/packages/lunaphp/framework)
 
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/lunaphp/framework/pulls)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/lunaphp/framework/pulls)
 
 ## About Luna Framework
 
