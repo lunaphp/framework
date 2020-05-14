@@ -5,9 +5,8 @@
 <a href="https://packagist.org/packages/lunaphp/framework"><img src="https://poser.pugx.org/lunaphp/framework/d/total.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/lunaphp/framework"><img src="https://poser.pugx.org/lunaphp/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/lunaphp/framework"><img src="https://poser.pugx.org/lunaphp/framework/license.svg" alt="License"></a>
+ [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/lunaphp/framework/pulls)
 </p>
-
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/lunaphp/framework/pulls)
 
 ## About Luna Framework
 
