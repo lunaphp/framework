@@ -1,0 +1,45 @@
+{
+    "name": "lunaphp/framework",
+    "type": "project",
+    "description": "The Luna Framework.",
+    "keywords": ["framework", "luna"],
+	"license": "MIT",
+    "homepage": "https://lunaphp.com",
+    "support": {
+        "issues": "https://github.com/lunaphp/framework/issues",
+        "source": "https://github.com/lunaphp/framework"
+    },
+    "authors": [
+        {
+            "name": "Eduardo Fiorini",
+            "email": "edupva@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "doctrine/dbal": "^2.10",
+        "doctrine/orm": "^2.7",
+        "symfony/asset": "^5.0",
+        "symfony/yaml": "^3.4",
+        "twig/twig": "~3.0",
+        "vlucas/phpdotenv": "^2.6"
+    },
+    "require-dev": {
+        "filp/whoops": "^2.4"
+    },
+	"config": {
+		"vendor-dir": "app/vendor",
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+	},
+    "autoload": {
+        "psr-4": {
+            "App\\":"app/",
+            "System\\":"system/"
+        }
+    }
+}

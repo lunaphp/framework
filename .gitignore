@@ -1,0 +1,93 @@
+#--------------------------
+# Windows
+#--------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+$RECYCLE.BIN/
+
+#--------------------------
+# Linux
+#--------------------------
+*~
+.directory
+.Trash-*
+
+#--------------------------
+# MacOS
+#--------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+#--------------------------
+# Environment Files
+#--------------------------
+.env
+.vagrant
+Vagrantfile
+logs/
+
+#--------------------------
+# Composer
+#--------------------------
+app/vendor/
+composer.lock
+
+#--------------------------
+# Yarn
+#--------------------------
+public/vendor/
+yarn.lock
+
+#--------------------------
+# Visual Studio Code
+#--------------------------
+.vscode/
+
+#--------------------------
+# Visual Studio
+#--------------------------
+.vs/
+
+#--------------------------
+# Sublime Text
+#--------------------------
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+.phpintel
+
+#--------------------------
+# Netbeans
+#--------------------------
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.nb-gradle/
+
+#--------------------------
+# PhpEnv Local Config
+#--------------------------
+.php-version
+.backup/
+
+#--------------------------
+# Jetbrains Editors (PHPStorm)
+#--------------------------
+*.iml
+.idea/
+
+

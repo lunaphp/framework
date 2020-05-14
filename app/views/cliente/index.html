@@ -1,0 +1,68 @@
+{% extends "templates/default/base.html" %}
+{% block title %}List - Cliente{% endblock %}
+
+{% block head %}
+<link href="{{ base_path }}vendor/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="{{ base_path }}vendor/datatables.net-colreorder-dt/css/colReorder.dataTables.min.css" rel="stylesheet">
+<link href="{{ base_path }}vendor/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet">
+<link href="{{ base_path }}vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <br>
+    <h2><b>Cliente - List</b></h2>
+    <hr>
+    <table id="table" class="display nowrap" style="width:100%">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Job Title</th>
+            <th>Started On</th>
+            <th>Date of Birth</th>
+            <th>Options</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in cliente %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.nome }}</td>
+            <td>{{ item.telefone }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.cpf }}</td>
+            <td>{{ item.data_nascimento|date("d/m/Y") }}</td>
+            <td>
+                <a href="cliente/add" class="btn btn-success" title="Add"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                <a href="cliente/edit" class="btn btn-info" title="Edit"><i class="fa fa-pencil" aria-hidden="true"></i></i></a>
+                <a href="cliente/delete" class="btn btn-danger" title="Delete"><i class="fa fa-times" aria-hidden="true"></i></i></a>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+
+{% block javascript %}
+<script src="{{ base_path }}vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="{{ base_path }}vendor/datatables.net-colreorder/js/dataTables.colReorder.min.js"></script>
+<script src="{{ base_path }}vendor/datatables.net-responsive/js/dataTables.responsive.min"></script>
+<script>
+    $(document).ready(function() {
+        $('#table').DataTable( {
+            rowReorder: {
+                selector: 'td:nth-child(2)'
+            },
+            responsive: true,
+            "language": {
+                //Visit this URL to download another language:
+                //http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/
+                "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/English.json"
+            }
+        });
+    });
+</script>
+{% endblock %}

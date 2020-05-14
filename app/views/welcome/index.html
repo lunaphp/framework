@@ -1,0 +1,31 @@
+{% extends "templates/default/base.html" %}
+{% block title %}Welcome to LunaPHP Framework{% endblock %}
+{% block body %}
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3">Hello World!</h1>
+        <p>Welcome to the LunaPHP Framework,<br> The Luna is a free web framework for building great websites and web applications using HTML, CSS, and JavaScript.</p>
+        <p><a class="btn btn-primary btn-lg" href="https://lunaphp.com/docs" role="button">Learn more »</a></p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Orm</h2>
+            <p>Luna allows direct connections to the PDO or using Doctrine ORM. Easily and simplified allowing you to generate your entity directly by LunaCLI.</p>
+            <p><a class="btn btn-secondary" href="https://lunaphp.com/docs/orm" role="button">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Template</h2>
+            <p>Luna allows you download templates, create .php or .html templates, and use twig to manage them.</p><br>
+            <p><a class="btn btn-secondary" href="https://lunaphp.com/docs/template" role="button">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>LunaCLI</h2>
+            <p>LunaCLI allows the automation of various functions such as create project, create new page, create cruds, create routes, create entities, among others.</p>
+            <p><a class="btn btn-secondary" href="https://lunaphp.com/docs/lunacli" role="button">Learn more &raquo;</a></p>
+        </div>
+    </div>
+    <hr>
+</div>
+{% endblock %}

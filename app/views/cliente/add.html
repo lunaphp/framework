@@ -1,0 +1,61 @@
+{% extends "templates/default/base.html" %}
+{% block title %}Add - Cliente{% endblock %}
+{% block body %}
+<div class="container">
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-lg-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <i class="fa fa-file-o" aria-hidden="true"></i> Criar Motorista
+                </div>
+                <div class="panel-body">
+                    <form enctype="multipart/form-data" method="POST">
+                        <div class="row">
+                        </div>
+                        <div class="row">
+                            <input type="hidden" id="retorno" name="retorno" value="">
+                            <input type="hidden" id="tela" name="tela" value="criar">
+                            <div class="col-md-6">
+                                <label>Nome Completo <b style="color: #ff0000">*</b></label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome completo" value=""/>
+                            </div>
+                            <div class="col-md-3">
+                                <label>CPF <b style="color: #ff0000">*</b></label>
+                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite o CPF" value="" />
+                            </div>
+                            <div class="col-md-3">
+                                <label>CNH <b style="color: #ff0000">*</b></label>
+                                <input type="text" class="form-control" id="cnh" name="cnh" placeholder="Digite a CNH" value="" />
+                            </div>
+                            <div class="col-md-3">
+                                <label>Tipo da Placa <b style="color: #ff0000">*</b></label>
+                                <select id="tipo" name="tipo" class="form-control">
+                                    <option value="normal" <?=($tipo == 'normal')?'selected':''?> >NORMAL</option>
+                                    <option value="mercosul" <?=($tipo == 'mercosul')?'selected':''?> >MERCOSUL</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label>Placa do Veículo <b style="color: #ff0000">*</b></label>
+                                <input type="text" class="form-control" id="placa" name="placa" placeholder="Digite a Placa" value="" />
+                            </div>
+                            <div class="col-md-3">
+                                <label>Senha <b style="color: #ff0000">*</b></label>
+                                <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite a senha" value=""/>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 15px;">
+                            <div class="col-sm-12 form-group">
+                                <p>Todos os campos que possuir <b style="color: #ff0000">*</b> são obrigatórios!</p>
+                            </div>
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-primary" id="enviar_dados" name="enviar_dados"><i class="fa fa-check" aria-hidden="true"></i> Gravar </button>
+                                <a href="#" class="btn btn-default" id="cancelar_dados" name="cancelar_dados"><i class="fa fa-chevron-left" aria-hidden="true"></i> Voltar a Lista</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

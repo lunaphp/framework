@@ -1,0 +1,12 @@
+php -S localhost:8085
+php -S localhost:8000
+php -S localhost:8080 -t public public/index.php
+
+classmap
+composer dumpautoload -o
+
+composer.phar update
+
+composer create-project --prefer-dist lunaphp/framework blog
+
+ yarn add footable
