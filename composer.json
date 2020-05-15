@@ -43,11 +43,11 @@
         }
     },
 	"scripts": {
-		"pre-install-cmd": "@start",
+		"post-install-cmd": "@start",
 		"post-root-package-install": "@start",
 		"start": [
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-			"yarn install --modules-folder public/"
+			"yarn install --modules-folder public/vendor/"
         ]
     }
 }
