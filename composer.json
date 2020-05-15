@@ -27,9 +27,6 @@
         "twig/twig": "~3.0",
         "vlucas/phpdotenv": "^2.6"
     },
-    "require-dev": {
-        "filp/whoops": "^2.4"
-    },
 	"config": {
 		"vendor-dir": "app/vendor",
         "optimize-autoloader": true,
@@ -43,7 +40,9 @@
         }
     },
 	"scripts": {
-		"post-install-cmd": [
+		"post-install-cmd": "@start",
+		"post-root-package-install": "@start",
+		"start": [
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
 			"yarn install --modules-folder public/"
         ]
