@@ -40,6 +40,7 @@ logs/
 app/vendor/
 composer.lock
 composer.old.json
+commando.txt
 
 #--------------------------
 # Yarn
