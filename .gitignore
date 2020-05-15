@@ -39,7 +39,7 @@ logs/
 #--------------------------
 app/vendor/
 composer.lock
-composer.old
+composer.old.json
 
 #--------------------------
 # Yarn
