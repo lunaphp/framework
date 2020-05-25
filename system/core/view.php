@@ -26,7 +26,7 @@ namespace System\Core
                     $twig = new \Twig\Environment($loader);
                 }
                 $file = '/'.$view.'.html';
-                $args["base_path"] = getenv('APP_PROTOCOL') . $_SERVER['HTTP_HOST'] . getenv('APP_URL_PATH')."/";
+                $args["base_path"] = getenv('APP_PROTOCOL') . $_SERVER['HTTP_HOST'] . getenv('APP_URL_PATH');
                 echo $twig->render($file, $args);
             }
         }
